@@ -7,7 +7,7 @@ date_default_timezone_set("Asia/Tokyo");
 
 $tit = '#em0si';
 
-$sql_path = './siem0.db';
+$sql_path = '../siem0.db';
 $sql_time = @date("Ymd\THis", @filemtime( $sql_path )).'JST';
 $dev_time = @date("Ymd\THis", @filemtime( 'index.php' )).'JST';
 
@@ -223,7 +223,7 @@ if(is_file($sql_path)){// database 存在します
 		$result .= '<div class="box"><a href="/"><img src="/favicon64.png"';
 		$result .= ' title=":em0si: (This cat\'s name is ZER0NYAN)" alt=":em0si: (This cat\'s name is ZER0NYAN)"></a></div>';
 		$result .= ''.$txt.'';
-		$result .= '<p style="text-align:center; font-size:1em;"><a href="hhttps://github.com/weepjp/zer0nyan" target="_blank">Zer0nyan</a> ©2023 weepjp<br>Released under the MIT license.</p>';
+		$result .= '<p style="text-align:center; font-size:1em;"><a href="https://github.com/weepjp/zer0nyan" target="_blank">Zer0nyan</a> ©2023 weepjp<br>Released under the MIT license.</p>';
 		$result .= '<div class="box" style="text-align:center;">';
 		$result .= 'emoji list update:'.$sql_time.' / dev update:'.$dev_time.'</div></div></body></html>';
 		return $result;
