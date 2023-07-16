@@ -1,4 +1,4 @@
-# zer0nyan
+# Zer0nyan
 emojis for Nostr. (temporary)
 
 # running server
